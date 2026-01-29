@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+:root {
+  background-color: #050505;
+  color: #ffffff;
+}
+
+body {
+  background-color: #050505;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  cursor: default;
+}
+
+/* Luxury Text Selection */
+::selection {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Smooth Scrollbar Hide */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Marquee Animation (Chalti hui patti) */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
